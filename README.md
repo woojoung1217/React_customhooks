@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# React_custom_hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React로 구현한 hooks
 
-## Available Scripts
+## 프로젝트 소개
 
-In the project directory, you can run:
+React hooks 를 통한 함수형 프로그래밍
+<br>
 
-### `npm start`
+## 🕰️ 기간
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 23.07.13일 - 23.7.17일
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ⚙️ 개발 환경
 
-### `npm test`
+- `React v18`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 주요 기능
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- useUpdateTitle => 페이지 제목을 특정 경우 수정하고 싶은 경우
+- useBeforeLeave => 마우스 무브에 따라 특정 요소를 처리하고 싶은 경우
+- useClick => 특정 요소를 클릭 시 함수를 동작 시키고 싶은 경우
+- useConfirm => 동작에서 사용자에게 확인을 통해 처리하고 싶은 경우
+- useFadeIn => 특정요소에 스타일을 주어 변경하고 싶은 경우
+- useFullScreen => 이미지를 최대화 or 최소화 하고 싶은 경우
+- useInput => input 요소에 특정 함수를 적용하고 싶은 경우
+- useNetWork => 와이파이 LAN 의 여부를 onLine or offLine 으로 확인하고 싶은 경우
+- usePreventLeave => 사용자가 페이지를 떠나기전 확인하고 싶은 경우
+- useScroll => 스크롤에 따라 함수를 실행시키고 싶은 경우
+- useStyle => 함수 동작에 따라 css Style 을 변경 하고 싶은 경우
+- useTabs => tab 변경 시 다른 화면을 보여주고 싶은 경우
