@@ -1,43 +1,22 @@
 /* eslint-disable */
-import React, { useEffect, useRef, useState } from "react";
+
+import React, { useEffect, useState } from "react";
+import useAxios from "./useAxios";
+import axios from "axios";
 import "./App.css";
 
-const useFullScreen = (onFulls) => {
-  const element = useRef();
-  const triggerFull = () => {
-    if (element.current) {
-      element.current.requestFullscreen();
-
-      if (onFulls && typeof onFulls === "function") {
-        onFulls(true);
-      }
-    }
-  };
-  const exit = () => {
-    document.exitFullscreen();
-    if (onFulls && typeof onFulls === "function") {
-      onFulls(false);
-    }
-  };
-
-  return { element, triggerFull, exit };
-};
-
 const App = () => {
-  const onFulls = (isPull) => {
-    console.log(isPull ? "full" : "not full");
-  };
-  const { element, triggerFull, exit } = useFullScreen(onFulls);
+  const { loading, data, error, refetch } = useAxios({
+    url: "https://yts.mx/api/v2/list_movies.json",
+  });
+  console.log(
+    `Loading :${loading} \n error :${error} , Data:${JSON.stringify(data)}`
+  );
   return (
-    <div className="App" style={{ height: "1000vh" }}>
-      <div ref={element}>
-        <img src="https://i.ibb.co/R6RwNxx/grape.jpg" alt="grape" width="250" />
-        <button onClick={exit}>exit</button>
-      </div>
-
-      <button onClick={triggerFull}>Make fullScreen</button>
+    <div>
+      <h1>{data && data.status}</h1>
+      <button onClick={refetch}>refetch</button>
     </div>
   );
 };
-
 export default App;

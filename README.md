@@ -29,3 +29,5 @@ React hooks 를 통한 함수형 프로그래밍
 - useScroll => 스크롤에 따라 함수를 실행시키고 싶은 경우
 - useStyle => 함수 동작에 따라 css Style 을 변경 하고 싶은 경우
 - useTabs => tab 변경 시 다른 화면을 보여주고 싶은 경우
+- useNotification => 사용자에게 브라우저 notification 을 보여줘 granted , denied 값을 받을 때 사용가능
+- useAxios = axios 를 사용하여 HTTP request 를 처리할 때 함수형으로 사용가능
